@@ -1,11 +1,10 @@
-numeros = []
-for i in range(5):
-    numero = float(input("Digite um número: "))
-    numeros.append(numero)
+nota1 = float(input("Digite a primeira nota: "))
+nota2 = float(input("Digite a segunda nota: "))
+media = (nota1 + nota2) / 2
 
-maior = numeros[0]
-for numero in numeros:
-    if numero > maior:
-        maior = numero
-
-print("O maior número é:", maior)
+if media >= 7.0:
+    print("APROVADO")
+elif media >= 5.0:
+    print("RECUPERAÇÃO")
+else:
+    print("REPROVADO")
