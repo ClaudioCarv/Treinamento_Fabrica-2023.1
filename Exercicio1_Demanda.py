@@ -1,12 +1,12 @@
-num1 = (input('digite o primeiro numero:'))
-num2 = (input('digte o segundo numero:'))
-num3 = (input('digite o terceiro numero:'))
-##Três iguais" OU "Dois iguais" OU "Três diferentes" OU "Dois diferentes"
-if num1 == num2 == num3:
- print('Três iguais')
-elif num1 == num2 or num1 == num3 or num2 == num3:
- print('Dois iguais')
-elif num1 != num2 != num3:
- print ('Três diferentes')
+from datetime import date
+
+ano_nascimento = int(input("Digite o ano de nascimento: "))
+ano_atual = date.today().year
+idade = ano_atual - ano_nascimento
+
+if idade < 18:
+    print(f"Você tem {idade} anos. Ainda faltam {18 - idade} anos para você se alistar.")
+elif idade == 18:
+    print(f"Você tem {idade} anos. Está na hora de se alistar!")
 else:
- print('Dois diferentes')
+    print(f"Você tem {idade} anos. Já passou o tempo de alistamento há {idade - 18} anos.")
