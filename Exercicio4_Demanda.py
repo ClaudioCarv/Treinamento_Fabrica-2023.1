@@ -1,9 +1,7 @@
-numero = float(input("Digite um número inteiro: "))
+import time
+print("\nContagem Regressiva\n")
+for i in range(10, 0, -1):
+    print(i)
+    time.sleep(1)
 
-if not numero.is_integer():
-    print("O número digitado não é inteiro")
-else:
-    if numero % 2 == 0:
-        print("O número é par")
-    else:
-        print("O número é ímpar")
+print("OS FOGOS DE ARTIFÍCIO ESTOURARAM!!")

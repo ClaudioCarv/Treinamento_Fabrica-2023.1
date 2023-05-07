@@ -1,8 +1,13 @@
-valor = float(input("Digite um valor: "))
+ano_nascimento = int(input("Digite o ano de nascimento do atleta: "))
+idade = 2023 - ano_nascimento
 
-if valor > 0:
-    print("O valor é positivo")
-elif valor == 0:
-    print("O valor é zero")
+if idade <= 9:
+    print("Categoria: MIRIM")
+elif idade <= 14:
+    print("Categoria: INFANTIL")
+elif idade <= 19:
+    print("Categoria: JUNIOR")
+elif idade <= 20:
+    print("Categoria: SÊNIOR")
 else:
-    print("O valor é negativo")
+    print("Categoria: MASTER")

@@ -1,6 +1,5 @@
-idade = int(input('digite sua idade:'))
-
-if idade >= 18:
-    print('você é maior de idade')
+frase = input("Digite uma frase: ").replace(" ", "").lower()
+if frase == frase[::-1]:
+    print("A frase é um palíndromo")
 else:
-    print('você é menor de idade')
+    print("A frase não é um palíndromo")
